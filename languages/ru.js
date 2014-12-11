@@ -1,4 +1,4 @@
-/*! 
+/*!
  * numeral.js language configuration
  * language : russian (ru)
  * author : Anatoli Papirovski : https://github.com/apapirovski
@@ -12,15 +12,16 @@
         abbreviations: {
             thousand: 'тыс.',
             million: 'млн',
-            billion: 'b',
-            trillion: 't'
+            billion: 'млрд',
+            trillion: 'трлн'
         },
         ordinal: function () {
-            // not ideal, but since in Russian it can taken on 
+            // not ideal, but since in Russian it can taken on
             // different forms (masculine, feminine, neuter)
             // this is all we can do
-            return '.'; 
+            return '.';
         },
+        byteSuffixes: ['Б', 'КБ', 'МБ', 'ГБ', 'ТБ', 'ПБ', 'ЭБ', 'ЗБ', 'ЙБ'],
         currency: {
             symbol: 'руб.'
         }
